@@ -15,7 +15,7 @@
   - Beats
     - single-purpose data shippers
 
-# Elasticsearch directories
+## Elasticsearch directories
 - bin
   - elasticsearch
   - elasticsearch-plugin
@@ -37,7 +37,7 @@
 - plugins
   - Elasticsearch plugins
 
-# Config files
+## Config files
 - elasticsearch.yml
   - settings node and cluster settings
 - jvm.options
@@ -50,6 +50,6 @@
   - config file
   - command line option
 
-# Terms
+## Terms
 - A node is an instance of Elasticsearch
 - A cluster is one or multiple nodes working together in a distributed manner
