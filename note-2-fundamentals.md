@@ -1,4 +1,5 @@
-# Overview
+# Fundamentals
+## What is the Elasticsearch?
 - Elasticsearch was developed by Shay Banon in 2010
   - It was completely rewrote from Compass
   - These are based on Apache Lucene
@@ -15,7 +16,7 @@
   - Beats
     - single-purpose data shippers
 
-## Elasticsearch directories
+## Elasticsearch Directories
 - bin
   - elasticsearch
   - elasticsearch-plugin
