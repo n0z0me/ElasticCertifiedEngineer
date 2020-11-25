@@ -1,0 +1,8 @@
+# JVM heap size settings
+- Xms512m
+- Xmx512m
+
+# GC logging settings
+#- Xlog:disable
+#- Xlog:all=warning:stderr:utctime,level,tags
+#- Xlog:gc*,gc+age=trace,safepoint:file=/opt/my-app/gc.log:utctime,pid,tags:filecount=32,filesize=64m
