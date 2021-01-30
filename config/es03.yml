@@ -34,13 +34,13 @@ path.data: /usr/share/elasticsearch/data
 #
 # Path to log files:
 #
-#${path.logs}
+path.logs: /usr/share/elasticsearch/logs
 #
 # ----------------------------------- Memory -----------------------------------
 #
 # Lock the memory on startup:
 #
-#bootstrap.memory_lock: true
+bootstrap.memory_lock: true
 #
 # Make sure that the heap size is set to about half the memory available
 # on the system and that the owner of the process is allowed to use this
@@ -86,5 +86,3 @@ cluster.initial_master_nodes: ["es01", "es02", "es03"]
 # Require explicit names when deleting indices:
 #
 #action.destructive_requires_name: true
-#
-bootstrap.memory_lock: true
