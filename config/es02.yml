@@ -20,21 +20,21 @@ cluster.name: es-docker-cluster
 #
 # Use a descriptive name for the node:
 #
-node.name: es01
+node.name: es02
 #
 # Add custom attributes to the node:
 #
-node.attr.rack: r1
+node.attr.rack: r2
 #
 # ----------------------------------- Paths ------------------------------------
 #
 # Path to directory where to store the data (separate multiple locations by comma):
 #
-${path.data}
+path.data: /usr/share/elasticsearch/data
 #
 # Path to log files:
 #
-${path.logs}
+#${path.logs}
 #
 # ----------------------------------- Memory -----------------------------------
 #
@@ -52,7 +52,7 @@ ${path.logs}
 #
 # Set the bind address to a specific IP (IPv4 or IPv6):
 #
-#network.host: 192.168.0.1
+network.host: 0.0.0.0
 #
 # Set a custom port for HTTP:
 #
@@ -65,7 +65,7 @@ http.port: 9200
 # Pass an initial list of hosts to perform discovery when this node is started:
 # The default list of hosts is ["127.0.0.1", "[::1]"]
 #
-discovery.seed_hosts: ["es01", "es02", "es03"]
+discovery.seed_hosts: ["es01", "es03"]
 #
 # Bootstrap the cluster using an initial set of master-eligible nodes:
 #
@@ -86,3 +86,5 @@ cluster.initial_master_nodes: ["es01", "es02", "es03"]
 # Require explicit names when deleting indices:
 #
 #action.destructive_requires_name: true
+#
+bootstrap.memory_lock: true
