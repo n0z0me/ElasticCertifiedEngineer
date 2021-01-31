@@ -63,6 +63,14 @@ services:
       - ./config/filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
     networks: 
       - elastic
+  logstash:
+    image: docker.elastic.co/logstash/logstash:7.9.2
+    container_name: logstash01
+    user: root
+    volumes:
+      - data05:/usr/share/logstash/data
+    networks:
+      - elastic
 
 volumes:
   data01:
